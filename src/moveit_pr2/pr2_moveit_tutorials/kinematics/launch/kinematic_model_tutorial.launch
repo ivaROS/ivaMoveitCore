@@ -1,0 +1,10 @@
+<launch>
+
+  <node name="kinematic_model_tutorial"
+        pkg="pr2_moveit_tutorials"
+        type="kinematic_model_tutorial"
+        respawn="false" output="screen">
+    <rosparam command="load"
+              file="$(find finalasm_moveit_config4)/config/kinematics.yaml"/>
+  </node>
+</launch>
